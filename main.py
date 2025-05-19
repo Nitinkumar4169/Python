@@ -1,13 +1,7 @@
-#Accepting Arguments
+#Lambda Functions
 
-import argparse
+lambda num : num * 2
 
-parser = argparse.ArgumentParser(
-  description='This program prints the name of my dogs'
-)
+multiply = lambda a, b : a * b
 
-parser.add_argument('-c', '--color', metavar='color', required=True, choices = {'red', 'yellow'}, help='the color to search for')
-
-args = parser.parse_args()
-
-print(args.color)
+print(multiply(2, 4))
