@@ -12,5 +12,8 @@ for suit in suits:
      for rank in ranks:
       cards.append([suit, rank])
 
+
 random.shuffle(cards)
-print(cards)
+
+card = cards.pop()
+print(card)
