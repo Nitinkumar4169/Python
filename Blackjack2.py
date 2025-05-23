@@ -12,8 +12,13 @@ for suit in suits:
      for rank in ranks:
       cards.append([suit, rank])
 
+def shuffle():
+    random.shuffle(cards)
 
-random.shuffle(cards)
+def deal():
+    card = cards.pop()
+    return card
 
-card = cards.pop()
+shuffle()
+card = deal()
 print(card)
